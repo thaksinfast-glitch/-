@@ -1,0 +1,8 @@
+{
+  "name": "AI Teacher Assistant - Grade & Attendance Checker 1",
+  "description": "An AI-powered tool for teachers to cross-check student grades and attendance across multiple documents (SGS, Toschool, and Attendance records).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

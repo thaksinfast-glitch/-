@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8F9FA] text-zinc-900;
+  }
+}
+
+/* Markdown Styles */
+.prose {
+  @apply text-zinc-700 leading-relaxed;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply text-zinc-900 font-bold mt-8 mb-4;
+}
+
+.prose h1 { @apply text-2xl; }
+.prose h2 { @apply text-xl; }
+.prose h3 { @apply text-lg; }
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4 ml-6 list-disc;
+}
+
+.prose li {
+  @apply mb-1;
+}
+
+.prose table {
+  @apply w-full border-collapse mb-6 overflow-hidden rounded-xl border border-zinc-200;
+}
+
+.prose th {
+  @apply bg-zinc-50 text-zinc-900 font-bold p-3 text-left border-b border-zinc-200;
+}
+
+.prose td {
+  @apply p-3 border-b border-zinc-100 text-sm;
+}
+
+.prose tr:last-child td {
+  @apply border-b-0;
+}
+
+.prose strong {
+  @apply text-zinc-900 font-semibold;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-emerald-500 bg-emerald-50/30 p-4 italic my-6 rounded-r-lg;
+}
